@@ -64,7 +64,7 @@ function search(){
 
     for(i = 0; i < data.length; i++){
         if(data[i].name.toUpperCase().startsWith(input)){
-            const newParagraph = document.createElement("p");
+            var newParagraph = document.createElement("div");
             newParagraph.innerHTML = data[i].name;
             document.getElementById("search").append(newParagraph);
         }
